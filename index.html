@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="m-0">
+<body class="m-0 overflow-x-hidden font-sans">
 
     <header>
         <section class="">
@@ -40,7 +40,7 @@
                             <li><a>Plant a tree</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">Green Earth</a>
+                    <a class=" font-bold text-xl">Green Earth</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -59,7 +59,10 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn rounded-md">Plant a tree</a>
+                    <button class="btn btn-active btn-warning rounded-3xl 
+  hover:bg-yellow-300 hover:text-gray-900 transition duration-300">
+                    Plant a tree
+                </button>
                 </div>
             </div>
 
@@ -75,7 +78,13 @@
             <div> 
                 <img src="assets/hero-leaf1.png" alt="">
             </div>
+
+
+
+            
             <div class=" text-center">
+
+                
 
                 <h1 class="text-4xl font-extrabold m-3">Plant a Tree, Grow a Future</h1>
                 <p class="m-2">Join our mission to plant 1 million trees and make the Earth greener for future
@@ -92,16 +101,18 @@
 
         <section class="bg-green-50 h-screen flex justify-center">
             <div class="pt-20 w-full ">
-                <h1 class="text-center text-4xl font-bold ">Choose Your Trees</h1>
+                <h1 class="text-center text-4xl font-bold ">Choose Your Trees</h1> 
 
-                <div class="flex justify-between text-center gap-2 mt-6">
+                
+
+                 <div class="flex flex-col md:flex-row md:justify-between md:gap-2 mt-6 text-center">
                     
-                    <div class="bg-green-50 p-6 rounded-lg w-64 flex-shrink-0">
+                    <div class="bg-green-50 p-6 rounded-lg w-64 flex-shrink-0"> <div class="w-64 bg-green-50 p-6 rounded-lg flex-shrink-0 mb-4 md:mb-0 md:mr-4"></div>
                         <h2 class="text-2xl font-bold mb-4">Categories</h2>
-                        <ol id="list-container" class="text-left"></ol>
+                        <ol id="list-container" class="flex flex-row overflow-x-auto space-x-2 md:flex-col md:space-x-0 md:space-y-2 text-left"></ol>
                     </div>
 
-                    <div id="card-container" class="flex-1 grid grid-cols-3 gap-4">
+                    <div id="card-container" class="flex-1 grid grid-cols-2 md:grid-cols-3 gap-4">
                         
                     </div>
 
@@ -122,7 +133,7 @@
         </section>
 
 
-        <section class="bg-white pt-80 pb-20 px-4 flex flex-col items-center text-center">
+        <section class="bg-white pt-260 md:pt-80 pb-20 px-4 flex flex-col items-center text-center">
             <h1 class="text-3xl md:text-4xl font-bold mb-10 text-gray-800">About the Campaign</h1>
             <div class="flex flex-col md:flex-row items-center gap-8 max-w-4xl w-full">
             <div class="flex-1">
